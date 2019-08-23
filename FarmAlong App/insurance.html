@@ -1,0 +1,180 @@
+<html>
+<head>
+<style>
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+</style>
+
+
+<script type="text/javascript">
+function populate(t1,t2){
+     var t1=document.getElementById(t1);
+     var t2=document.getElementById(t2);
+     t2.innerHTML = "";
+     if(t1.value == "AP"){
+               var optionArray = ["|","kurnool|Kurnool","visakhapatnam|Visakhapatnam","Kadapa|Kadapa","guntur|Guntur","ananthapur|
+Ananthapur","krishna|Krishna","nellore|Nellore","prakasam|Prakasam","srikakulam|Srikakulam","vijayanagaram|Vijayanagaram"];
+     }else if(t1.value == "Telangana") {
+               var optionArray=["|","adilabad|Adilabad","hyderabad|hyderabad","jagital|Jagital","jangaon|Jangaon","Bhupalpalle|
+Bhupalpalle","gadwal|Gadwal","karimnagar|Karimnagar","khamam|Khamam","mahabubnagar|Mahabubnagar","medak|Medak","nalgonda|
+Nalgonda","nizamabad|Nizamabad"];
+     }    
+     for(var option in optionArray){
+             var pair = optionArray[option].split("|");
+             var newOption = document.createElement("option");
+             newOption.value = pair[0];
+             newOption.innerHTML = pair[1];
+             t2.options.add(newOption);
+     }
+
+
+}
+</script>
+
+
+</head>
+<body>      
+<form action="/action_page.php">
+
+
+
+
+<table style="width:100%">
+ <tr>
+  <td><h3>Personal Details</h3></td>
+  </tr>
+  </tr><td></td></tr>
+  </tr><td></td></tr>
+  </tr><td></td></tr>
+
+
+  <tr>
+    <td>First name:</td><td><input type="text" name="firstname" value=""></td>
+    <td>Last name:</td><td><input type="text" name="lastname" value=""></td>
+    <td>Mobile no:</td><td><input type="text" name="mobile no" value=""><br><br></td>
+  </tr>
+  </tr><td></td></tr>
+  </tr><td></td></tr>
+  <tr>
+    <td>Age:</td><td><input type="text" name="age" value=""></td>
+    <td>Gender</td><td><select name="gender">
+    <option value="Female">Female</option>
+    <option value="Male">Male</option>
+  </select></td>
+    <td>Category:</td><td><select name="category">
+    <option value=""></option>
+    <option value=""></option>
+  </select></td>
+  </tr>
+  </tr><td></td></tr>
+  </tr><td></td></tr>
+  </tr><td></td></tr>
+  </tr><td></td></tr>
+  </tr><td></td></tr>
+ <tr>
+  <td><h3>Category of farmer</h3></td>
+  </tr>
+  </tr><td></td></tr>
+  </tr><td></td></tr>
+  </tr><td></td></tr>
+  <tr>
+    <td>Type of farmer</td><td><select name="typeoffarmer">
+    <option value=""></option>
+    <option value=""></option>
+  </select></td>  
+  <td>Loanee/Non Loanee</td><td><select name="loanee">
+    <option value=""></option>
+    <option value=""></option>
+  </select></td>
+  <td>Nature of farmer</td><td><select name="natureoffarmer">
+    <option value=""></option>
+    <option value=""></option>
+  </select></td>
+  </tr>
+  </tr><td></td></tr>
+  </tr><td></td></tr>
+  </tr><td></td></tr>
+  <tr>
+  <td><h3>Residential address of farmer</h3></td>
+  </tr>  
+  </tr><td></td></tr>
+  </tr><td></td></tr>
+  </tr><td></td></tr>
+  <tr>
+<td>
+  <hr />
+State<select id="s1" name="s1" onchange="populate(this.id,'s2')">
+    <option value=""></option>
+    <option value="AP">AndhraPradesh</option>
+    <option value="Telangana">Telangana</option>
+  </select>
+<hr />
+District<select id="s2" name="s2">
+  </select>
+<hr /></td>
+  <td>District</td><td><select id="district" name="district">
+  </select></td>
+  <td>Sub district</td><td><select name="subdistrict">
+    <option value=""></option>
+    <option value=""></option>
+  </select></td>
+  </tr>
+  </tr><td></td></tr>
+  </tr><td></td></tr>
+
+
+  <tr>
+  <td>Residential Village</td><td><select name="residentialvillage">
+    <option value=""></option>
+    <option value=""></option>
+  </select></td>
+  <td>PIN Code:</td><td><input type="text" name="pinCode" value=""></td>
+  <td>Adress:</td><td><textarea rows="2" cols="20" name="comment" form="usrform"></textarea></td>
+  </tr>
+  </tr><td></td></tr>
+  </tr><td></td></tr>
+  </tr><td></td></tr>
+  <tr>
+  <td>Aadhar No:</td><td><input type="text" name="aadharno" value=""></td>
+  </tr>
+  </tr><td></td></tr>
+  </tr><td></td></tr>
+  </tr><td></td></tr>
+  </tr><td></td></tr>
+  </tr><td></td></tr>
+</table>
+<input type="checkbox" name="vehicle1" value="Bike">All details have been collected for farmers insurance as notifoed by state 
+government
+
+</form>
+
+<button class="button button1" onclick="insurance.html">Submit</button>
+</center>
+</form>
+</body>
+</html>
