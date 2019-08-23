@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "705809956229",
+    "firebase_url": "https://power-4dea5.firebaseio.com",
+    "project_id": "power-4dea5",
+    "storage_bucket": "power-4dea5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705809956229:android:6dbef2b0b0b2138b",
+        "android_client_info": {
+          "package_name": "e.lavanya.power"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705809956229-v6pv6n3lmjncrh71oloo70a8g8hq9qbc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "e.lavanya.power",
+            "certificate_hash": "3627300b2524b1007cd7dcfc719498a5c54ea41b"
+          }
+        },
+        {
+          "client_id": "705809956229-seooscltkfr36mr7s91c3kk6qd7bjh00.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfGkmOOys7hY3zLQEXLxdXsqOAy8EUb_8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705809956229-seooscltkfr36mr7s91c3kk6qd7bjh00.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
